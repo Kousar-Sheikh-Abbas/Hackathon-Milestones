@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-panel">
+            <h1 class="animated-text">Your Journey to the Perfect Resume Begins Here</h1>
+        </div>
+        <div class="right-panel">
+            <div class="form-container">
+                <h2>Resume Builder</h2>
+                <form id="resumeForm">
+                    <section>
+                        <h3>Personal Info</h3>
+                        <input type="text" id="name" placeholder="Full Name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="tel" id="phone" placeholder="Phone Number" required>
+                    </section>
+
+                    <section>
+                        <h3>Skills</h3>
+                        <textarea id="skills" placeholder="List your skills" rows="3"></textarea>
+                    </section>
+
+                    <section>
+                        <h3>Education</h3>
+                        <input type="text" id="education" placeholder="Degree, School, Year">
+                    </section>
+
+                    <section>
+                        <h3>Work Experience</h3>
+                        <textarea id="workExperience" placeholder="Describe your work experience" rows="3"></textarea>
+                    </section>
+
+                    <button type="button" id="generateButton">Generate Resume</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="resumeOutput" class="resume-output"></div>
+    <button type="button" id="downloadButton" hidden>Download Resume</button>
+
+</body>
+</html>
